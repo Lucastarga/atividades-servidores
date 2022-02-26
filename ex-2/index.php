@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <title> Aula 2</title>
+    <title> Exercício 2</title>
 
     <style>
 
@@ -82,11 +82,9 @@
 
     </style>
 </head>
-
-
-
 <body>
     <form class="form" action="recebe_dados.php" method="GET">
+        <h1>Exibindo os valores em ordem crescente</h1>
         <div class="item-form">
             <label for="num1">Primeiro Valor:</label></br>
             <input class="input-item" type="number" id="num1" name="num1" placeholder="Digite um número" required></br>
@@ -102,5 +100,4 @@
         </div>
     </form>
 </body>
-
 </html>

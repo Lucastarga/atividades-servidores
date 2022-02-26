@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <title> Aula 2</title>
+    <title> Exercício 2</title>
 
     <style>
         body {
@@ -18,7 +18,7 @@
             justify-content: center;
             align-items: center;
             background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
-
+            overflow: hidden;
         }
 
         label{
@@ -39,8 +39,20 @@
             box-shadow: 2px 14px 32px 0px rgba(0,0,0,0.40);
             -webkit-box-shadow: 2px 14px 32px 0px rgba(0,0,0,0.40);
             -moz-box-shadow: 2px 14px 32px 0px rgba(0,0,0,0.40);
-
+            animation: show .6s forwards;
         }
+
+        @keyframes show {
+            from {
+                opacity: 0;
+                transform: matrix3d(-30px, 0, 0);
+            }
+            to {
+                opacity: 1;
+                transform: matrix3d(0, 0, 0);
+            }
+        }
+
     </style>
 </head>
 
@@ -48,18 +60,28 @@
     <?php
         $num1 = $_GET['num1'];
         $num2 = $_GET['num2'];
-        $array_num = array('A' => $num1,'B' =>$num2);
-        asort($array_num);
-
-        echo "<div class='form'>";
-        foreach($array_num as $i => $valor ){
-            echo "<h2>" . $i . ' = '. $valor. "</h2>" . "</br>";
-        }
-
-        echo "</div>";
-
-
     ?>
+
+    <?php 
+        if($num1 < $num2) { ?>
+            <div class="form">
+                <h1> A = <?= $num1 ?></h1>
+                <h1> B = <?= $num2 ?></h1>
+            </div>
+        <?php } else { ?>
+            <div class="form">
+                <h1> A = <?= $num2 ?></h1>
+                <h1> B = <?= $num1 ?></h1>
+            </div>
+        <?php } ?>
+
+    
+
+       
+        
+
+
+    
 </body>
 
 </html>

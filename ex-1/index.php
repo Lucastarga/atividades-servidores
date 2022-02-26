@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <title> Aula 2</title>
+    <title> Exercício 1</title>
 
     <style>
 
@@ -86,14 +86,9 @@
 <body>
     <form class="form" action="recebe_dados.php" method="GET">
         <div class="item-form">
-            <label for="num1">Primeiro Valor:</label></br>
+            <label for="num1">Verifica valor:</label></br>
             <input class="input-item" type="number" id="num1" name="num1" placeholder="Digite um número" required></br>
         </div>
-
-        <!-- <div class="item-form">
-            <label for="num2">Segundo Valor:</label></br>
-            <input class="input-item" type="number" id="num2" name="num2" placeholder="Digite um número" required></br>
-        </div>  -->
 
         <div class="item-form">
             <input class="input-submit" type="submit"name="Enviar">
