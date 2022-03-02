@@ -90,7 +90,7 @@
         <h1>Retornando o mês correspondente</h1>
         <div class="item-form">
             <label for="mes">Digite um número de 1 a 12</label></br>
-            <input class="input-item" type="number"  id="mes" name="mes" placeholder="Digite aqui" ></br>
+            <input class="input-item" type="number" min="1" max="12"  id="mes" name="mes" placeholder="Digite aqui" required></br>
         </div>
 
         <div class="item-form">
