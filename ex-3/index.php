@@ -86,21 +86,21 @@
 
 
 <body>
-    <form class="form" action="recebe_dados.php" method="GET">
+    <form class="form" action="recebe_dados.php" method="POST">
         <h1>Cálculo de média final</h1>
         <div class="item-form">
             <label for="nota1">Primeira nota:</label></br>
-            <input class="input-item" type="number" max="10" id="nota1" name="nota1" placeholder="Digite sua nota" required></br>
+            <input class="input-item" type="number" min="0" max="10" id="nota1" name="nota1" placeholder="Digite sua nota" required></br>
         </div>
 
         <div class="item-form">
             <label for="nota2">Segunda nota:</label></br>
-            <input class="input-item" type="number" max="10" id="nota2" name="nota2" placeholder="Digite sua nota" required></br>
+            <input class="input-item" type="number" min="0" max="10" id="nota2" name="nota2" placeholder="Digite sua nota" required></br>
         </div> 
 
         <div class="item-form">
             <label for="nota3">Terceira nota:</label></br>
-            <input class="input-item" type="number" max="10" id="nota3" name="nota3" placeholder="Digite sua nota" required></br>
+            <input class="input-item" type="number" min="0" max="10" id="nota3" name="nota3" placeholder="Digite sua nota" required ></br>
         </div> 
 
         <div class="item-form">

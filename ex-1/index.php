@@ -16,7 +16,7 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
-            font-style: 'Montserrat', sans-serif;
+            font-family: 'Montserrat', sans-serif;
         }
 
         body {
@@ -84,10 +84,10 @@
 
 
 <body>
-    <form class="form" action="recebe_dados.php" method="GET">
+    <form class="form" action="recebe_dados.php" method="POST">
         <div class="item-form">
             <label for="num1">Verifica valor:</label></br>
-            <input class="input-item" type="number" id="num1" name="num1" placeholder="Digite um número" required></br>
+            <input class="input-item" type="number" id="num1" name="num1" placeholder="Digite um número" required ></br>
         </div>
 
         <div class="item-form">

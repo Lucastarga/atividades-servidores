@@ -38,6 +38,7 @@
         .form {
             padding: 20px;
             min-width: 200px;
+            max-width: 600px;
             min-height: 200px;
             background-color: #fff;
             display: flex;
@@ -93,9 +94,10 @@
 
 <body>
     <?php
-        $nota1 = $_GET['nota1'];
-        $nota2 = $_GET['nota2'];
-        $nota3 = $_GET['nota3'];
+        $nota1 = $_POST['nota1'];
+        $nota2 = $_POST['nota2'];
+        $nota3 = $_POST['nota3'];
+        $validate = ($nota1 !== '' && $nota2 !== '' && $nota3 !== '') ? true : false;
 
         $array_nota = array('N1' => $nota1, 'N2' => $nota2, 'N3' => $nota3);
         $media =  array_sum($array_nota) / 3;
@@ -111,7 +113,7 @@
 
     <!-- inicio da condicao if / else -->
     <?php
-    if ($media) { ?>
+    if ($validate) { ?>
         <div class="form">
             <div class="image">
                 <img src="./user.png" alt="">
@@ -148,7 +150,11 @@
         </div>
         
 
-    <?php } ?>
+    <?php } else {?>
+        <div class="form">
+            <h2>Erro, os campos do formulário não podem estar vazios! Preencha-os e tente novamente.</h2>
+        </div>
+        <?php } ?>
     <!-- fim da condicao if / else -->
 
 </body>
